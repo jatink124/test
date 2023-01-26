@@ -1,9 +1,10 @@
 import React,{useContext} from 'react'
 import AuthContext from './AuthContext';
 function MyComponent() {
+  const {user,setUser} = useContext(AuthContext)
   return (
     <div>
-    const {user,setUser} = useContext(AuthContext)
+<div>{user}</div>
     </div>
   )
 }
